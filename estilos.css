@@ -1,0 +1,407 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f2f4f8;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 25px 20px 0;
+    box-sizing: border-box;
+}
+
+.cabecera-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#contenedor-menu {
+    margin-left: auto;
+}
+
+h1 {
+    color: rgb(24, 48, 104);
+    font-family: "Arial Black", Impact, sans-serif;
+    font-size: clamp(48px, 6vw, 90px);
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-align: left;
+    margin: 0;
+    text-shadow: 3px 3px 0 #c8d5e9;
+}
+
+h2 {
+    color: rgb(24, 48, 104);
+    font-size: 30px;
+    font-family: Georgia, serif;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#menu {
+    background-color: rgb(24, 48, 104);
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0;
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+#menu a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: greenyellow;
+    border-radius: 5px;
+}
+
+.banner-portada {
+    max-width: 1150px;
+    margin: 25px auto 0;
+}
+
+.banner-portada img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.contenido {
+    max-width: 1150px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.contenido p {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.distribucion {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.barra-lateral {
+    flex: 0 0 260px;
+    background-color: #101419;
+    color: #eeeeee;
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.barra-lateral figure {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.barra-lateral img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.barra-lateral h3 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    text-align: left;
+    margin: 0 0 15px;
+}
+
+.barra-lateral p {
+    color: #dddddd;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+#recomendador {
+    background-color: #eef2f8;
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+#recomendador h2 {
+    font-size: 26px;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+#recomendador > p:first-of-type {
+    max-width: 620px;
+    margin: 0 auto 28px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+#formLecturas {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+    max-width: 540px;
+    margin: 20px 0 0;
+}
+
+#formLecturas label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: rgb(24, 48, 104);
+}
+
+#formLecturas select,
+#formLecturas button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#formLecturas select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #b6c2d8;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#formLecturas select:focus {
+    outline: 2px solid rgb(24, 48, 104);
+    outline-offset: 2px;
+}
+
+#formLecturas button {
+    background-color: rgb(24, 48, 104);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formLecturas button:hover {
+    background-color: #2d4b92;
+    color: greenyellow;
+}
+
+#resultado {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(24, 48, 104);
+    background-color: #ffffff;
+    border: 1px solid #b6c2d8;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+#resultado.error {
+    color: #b00020;
+}
+
+#resultado:empty {
+    display: none;
+}
+
+.seccion-articulos {
+    flex: 1;
+    min-width: 0;
+}
+
+.seccion-articulos h2 {
+    text-align: left;
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.lista-tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid #3e699b;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta:nth-child(2) {
+    border-left-color: #9a7331;
+}
+
+.tarjeta:nth-child(3) {
+    border-left-color: #6c638c;
+}
+
+.tarjeta .categoria {
+    display: block;
+    color: #526789;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.tarjeta h3 {
+    color: rgb(24, 48, 104);
+    font-family: Georgia, serif;
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 0 0 12px;
+}
+
+.tarjeta p {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+}
+ 
+.tarjeta.destacada {
+    background-color: #eef2f8;
+    box-shadow: 0 0 0 2px rgb(24, 48, 104);
+    transform: translateY(-4px);
+}
+
+@media (max-width: 950px) {
+    .cabecera-superior {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #contenedor-menu {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    #menu {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #menu ul {
+        gap: 5px;
+    }
+
+    #menu a {
+        padding: 8px 10px;
+    }
+
+    .banner-portada img {
+        height: 180px;
+    }
+
+    .contenido {
+        margin: 20px 15px;
+        padding: 18px;
+    }
+
+    .distribucion {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .distribucion article {
+        width: 100%;
+    }
+
+    .barra-lateral {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .barra-lateral img {
+        max-width: 220px;
+        margin: 0 auto;
+    }
+
+    #recomendador {
+        padding: 18px;
+    }
+
+    #recomendador h2 {
+        font-size: 23px;
+    }
+
+}
+

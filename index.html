@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIPER-CAOS | Filosofía contemporánea</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <header id="inicio">
+
+        <div class="cabecera-superior">
+
+            <h1>HIPER-CAOS</h1>
+
+            <div class="contenedor" id="contenedor-menu">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#articulos">Artículos</a></li>
+                        <li><a href="#acerca-de">Acerca de</a></li>
+                        <li><a href="#recomendador">Lecturas</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="banner-portada">
+            <img src="imagenes/banner-caos.png" alt="Composición matemática sobre el caos">
+        </div>
+
+    </header>
+
+
+    <main class="contenido">
+        <div class="distribucion">
+
+            <section id="articulos" class="seccion-articulos">
+
+                <h2>Últimos artículos</h2>
+
+                <div class="lista-tarjetas">
+
+                    <article class="tarjeta"  data-tema="realismo">
+                        <span class="categoria">Realismo especulativo</span>
+
+                        <h3>El realismo especulativo de Quentin Meillassoux</h3>
+
+                        <p>
+                            Una introducción a las principales ideas
+                            del realismo especulativo y su crítica
+                            al correlacionismo.
+                        </p>
+                    </article>
+
+                    <article class="tarjeta" data-tema="aceleracionismo">
+                        <span class="categoria">Aceleracionismo</span>
+
+                        <h3>¿Qué significa acelerar el capitalismo?</h3>
+
+                        <p>
+                            Una aproximación a las distintas corrientes
+                            del aceleracionismo y sus relaciones con
+                            la tecnología y la modernidad.
+                        </p>
+                    </article>
+
+                    <article class="tarjeta" data-tema="hauntologia">
+                        <span class="categoria">Hauntología</span>
+
+                        <h3>Los futuros que nunca llegaron</h3>
+
+                        <p>
+                            Una introducción al concepto de hauntología
+                            y a las reflexiones de Mark Fisher
+                            sobre la cultura contemporánea.
+                        </p>
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <aside id="acerca-de" class="barra-lateral">
+
+                <figure>
+                    <img src="imagenes/caos-definicion.jpg" alt="Definición gráfica del concepto de caos"
+                        loading="lazy">
+                </figure>
+
+                <h3>Sobre HIPER-CAOS</h3>
+
+                <p>
+                    HIPER-CAOS es un espacio dedicado a explorar
+                    las relaciones entre filosofía contemporánea,
+                    tecnología, cultura digital y nuevas formas
+                    de comprender la realidad.
+                </p>
+
+            </aside>
+        </div>
+        <section id="recomendador">
+
+            <h2>Explora el pensamiento contemporáneo</h2>
+
+            <p>
+                Selecciona una corriente filosófica y descubre
+                una lectura recomendada.
+            </p>
+
+            <form id="formLecturas">
+
+                <label for="tema">Corriente filosófica:</label>
+
+                <select id="tema" name="tema">
+                    <option value="">Selecciona una opción</option>
+                    <option value="realismo">Realismo especulativo</option>
+                    <option value="aceleracionismo">Aceleracionismo</option>
+                    <option value="hauntologia">Hauntología</option>
+                </select>
+
+                <button type="submit">Recomendar lectura</button>
+
+            </form>
+
+            <p id="resultado" aria-live="polite"></p>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
