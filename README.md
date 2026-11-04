@@ -1,6 +1,6 @@
 # HIPER-CAOS
 
-Web en español sobre filosofía contemporánea, tecnología y cultura digital. Incluye artículos introductorios y un recomendador de lecturas sobre realismo especulativo, aceleracionismo y hauntología.
+Web en español en construcción para un proyecto académico. La temática está asociada a la filosofía contemporánea, la tecnología y la cultura digital. Incluye artículos introductorios y un recomendador de lecturas sobre realismo especulativo, aceleracionismo y hauntología.
 
 ## Archivos
 
